@@ -1,0 +1,90 @@
+@import '_variables.scss';
+@import '_navbar.scss';
+
+body{
+    font-family: $font-roboto;
+    color:$black
+}
+
+#hero{
+    background-color: $background;
+}
+
+.font-paragraph{
+    font-size: 14px;
+}
+
+.font-titles{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.font-terms{
+    font-size: 12px;
+}
+
+
+.btn-class{
+    padding: .5rem 2rem;
+    border: none;
+    &--primary{
+        background: $black;
+        color: $white;
+
+        &:hover{
+            background: $white;
+            color: $black;
+        }
+    }
+
+    &--secondary{
+        background:$green;
+        color: $blue;
+        &:hover{
+            background: $white;
+        }
+    }
+}
+
+.margin-gral>*{
+    margin-bottom:20px
+}
+
+#hero img{
+    width: 75%;
+}
+
+#hero-2{
+    background-image: url($bg-img);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: $blue;
+
+}
+
+.footer-main-container {
+    background-color: $footer-background-color-dark;
+    font-family: Arial, Helvetica, sans-serif;
+
+    path {
+        fill: $white;
+    }
+
+    li{
+        display: inline;
+    }
+
+    a {
+        display: block;
+        color: $white;
+        text-decoration: none;
+
+        :hover {
+            color: $green-hover;
+        }
+    }
+}
+
+.bg-colored-gray {
+    color: $background-gray;
+}

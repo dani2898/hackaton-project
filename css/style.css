@@ -1,0 +1,128 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.custom__navbar {
+  height: 5rem;
+  padding: 0 3rem;
+  background-color: rgba(0, 0, 0, 0.315);
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.custom__navbar-logo {
+  width: 10rem;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.custom__navbar-logo svg {
+  width: 10rem;
+  height: auto;
+}
+
+.custom__navbar-logo svg .logo {
+  fill: white;
+}
+
+.navbar__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: white;
+  font-size: 1.5rem;
+  width: 32rem;
+}
+
+.navbar__menu-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 23rem;
+}
+
+.navbar__menu-profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 10rem;
+}
+
+.navbar__menu-img {
+  overflow: hidden;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 100%;
+}
+
+.navbar__menu-img img {
+  width: auto;
+  height: 100%;
+}
+
+.navbar__menu-option-2 {
+  visibility: hidden;
+  width: 0;
+}
+
+@media (max-width: 964px) {
+  .custom__navbar {
+    background-color: black;
+    padding: 0 2rem;
+    height: 3rem;
+  }
+  .navbar__menu {
+    font-size: 1.2rem;
+    width: 10rem;
+  }
+  .navbar__menu-logo {
+    width: 4rem;
+  }
+  .navbar__menu-logo svg {
+    width: 4rem;
+  }
+  .navbar__menu-links {
+    visibility: hidden;
+  }
+  .navbar__menu-img {
+    height: 2rem;
+    width: 2rem;
+  }
+}
+
+html {
+  font-family: "Roboto";
+}
+/*# sourceMappingURL=style.css.map */
