@@ -166,6 +166,7 @@ body {
 
 #hero img {
   width: 75%;
+  height: 90%;
 }
 
 #hero-2 {
@@ -188,17 +189,56 @@ body {
   display: inline;
 }
 
+.footer-main-container h6 {
+  font-weight: 600;
+  font-size: 14px;
+  color: #919496;
+}
+
 .footer-main-container a {
   display: block;
   color: white;
   text-decoration: none;
+  margin: 12px 0;
+  font-size: 14px;
+  font-weight: 600;
 }
 
-.footer-main-container a :hover {
-  color: #1DB954;
+.footer-main-container a:hover {
+  color: #1DB954 !important;
 }
 
 .bg-colored-gray {
   color: #222326;
+}
+
+@media (max-width: 767px) {
+  .under-links a {
+    color: #919496;
+    font-size: 10px;
+    margin: 0 10px;
+  }
+  .under-links p {
+    color: #919496;
+    font-size: 10px;
+    margin: 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  .under-links a {
+    color: #919496;
+    font-size: 12px;
+    margin: 0 10px;
+  }
+  .under-links p {
+    color: #919496;
+    font-size: 12px;
+    margin: 10px;
+  }
+}
+
+#social-media i {
+  width: 2rem;
 }
 /*# sourceMappingURL=main.css.map */

@@ -52,6 +52,7 @@ body{
 
 #hero img{
     width: 75%;
+    height: 90%;
 }
 
 #hero-2{
@@ -65,26 +66,68 @@ body{
 .footer-main-container {
     background-color: $footer-background-color-dark;
     font-family: Arial, Helvetica, sans-serif;
-
+  
     path {
-        fill: $white;
+      fill: $white;
     }
-
-    li{
-        display: inline;
+  
+    li {
+      display: inline;
     }
-
+  
+    h6 {
+      font-weight: 600;
+      font-size: 14px;
+      color: $text-gray;
+    }
+  
     a {
-        display: block;
-        color: $white;
-        text-decoration: none;
-
-        :hover {
-            color: $green-hover;
+      display: block;
+      color: $white;
+      text-decoration: none;
+      margin: 12px 0;
+      font-size: 14px;
+      font-weight: 600;
+  
+      &:hover {
+        color: $green-hover !important;
+      }
+    }
+  }
+  
+  .bg-colored-gray {
+    color: $background-gray;
+  }
+  
+  .under-links {
+    @media (max-width: 767px) {
+      a {
+          color: $text-gray;
+          font-size: 10px;
+          margin: 0 10px;
+        }
+        p {
+          color: $text-gray;
+          font-size: 10px;
+          margin: 10px;
         }
     }
-}
-
-.bg-colored-gray {
-    color: $background-gray;
-}
+    @media (min-width: 768px) {
+      a {
+        color: $text-gray;
+        font-size: 12px;
+        margin: 0 10px;
+      }
+      p {
+        color: $text-gray;
+        font-size: 12px;
+        margin: 10px;
+      }
+    }
+  }
+  
+  #social-media {
+      i {
+          width: 2rem;
+      }
+  }
